@@ -37,7 +37,6 @@ jobs:
         OWNER: ${{ github.repository_owner }}
         REPO: ${{ github.event.repository.name }}
       run: |
-        cd ..
         python scripts-repo/parse_images.py
         python scripts-repo/image_hierarchy.py
         python scripts-repo/image_info.py
