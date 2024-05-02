@@ -42,7 +42,6 @@ def find_image_hierarchy(image_name):
     return hierarchy
 
 def print_hierarchy(hierarchy):
-    print("Image Hierarchy from Base to Top-Level:")
     for i, image in enumerate(hierarchy):
         indent = ' ' * (2 * i)
         print(f"{indent}- {image}")
