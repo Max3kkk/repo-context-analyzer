@@ -1,8 +1,6 @@
 import json
 import glob
 from collections import defaultdict
-from re import L
-from tkinter import N
 import requests
 from tqdm import tqdm
 from bs4 import BeautifulSoup
