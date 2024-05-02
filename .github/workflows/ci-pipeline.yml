@@ -23,6 +23,10 @@ jobs:
     - name: Install dependencies
       run: |
         pip install requests beautifulsoup4 pyyaml tqdm dockerfile-parse
+    
+    - name: Install Syft
+      run: |
+        curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
 
     - name: Run scripts
       env:
