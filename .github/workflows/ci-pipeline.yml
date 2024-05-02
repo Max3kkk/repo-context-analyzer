@@ -18,7 +18,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install requests beautifulsoup4 pyyaml tqdm
+        pip install requests beautifulsoup4 pyyaml tqdm dockerfile-parse
 
     - name: Run scripts
       env:
