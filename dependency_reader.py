@@ -17,7 +17,7 @@ def fetch_description_pypi(package_name):
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        return data["info"]["summary"] or "-"
+        return data["info"]["summary"] + "\n\n" + data["info"]["description"] if data["info"]["summary"] else "-"
 
 
 def fetch_description_npm(package_name):
@@ -139,13 +139,13 @@ def get_package_description(artifact):
     return language, description, package_name
 
 
-def process_syft_output(file_path):
+def process_syft_output(file_path, tqdm_text):
     """Processes the Syft output JSON file to extract package names and fetch their descriptions."""
     package_descriptions = defaultdict(set)
     with open(file_path, "r") as file:
         data = json.load(file)
         artifacts = data["artifacts"]
-        for artifact in tqdm(artifacts, desc="Processing dependencies", unit="dependency"):
+        for artifact in tqdm(artifacts, desc=f"Processing {tqdm_text} dependencies", unit="dependency"):
             language, description, package_name = get_package_description(artifact)
             if description:
                 package_descriptions[language].add((package_name, description))
@@ -159,7 +159,7 @@ def write_descriptions_to_file(file_path, package_descriptions):
 
 def process_project_dependencies():
     syft_file = f"data/project_dependencies.json"
-    package_descriptions = process_syft_output(syft_file)
+    package_descriptions = process_syft_output(syft_file, "project")
     write_descriptions_to_file("data/dependency_descriptions.json", package_descriptions)
 
 def append_descriptions_to_file(package_descriptions):
@@ -182,7 +182,7 @@ def process_docker_dependencies():
 
     for docker_image in docker_images:
         syft_file = f"data/docker_dependency_{docker_image}.json"
-        package_descriptions = process_syft_output(syft_file)
+        package_descriptions = process_syft_output(syft_file, docker_image)
         append_descriptions_to_file(package_descriptions)
 
 def process_project_languages():
