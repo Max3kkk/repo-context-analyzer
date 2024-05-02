@@ -6,8 +6,6 @@ on:
       github_token:
         required: true
         type: string
-    branches:
-      default: main
 
 jobs:
   build-and-run-scripts:
