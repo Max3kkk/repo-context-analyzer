@@ -16,7 +16,7 @@ def parse_dockerfile_images(dockerfiles):
     images = []
     for dockerfile in dockerfiles:
         dfp = DockerfileParser(path=dockerfile)
-        images.extend([instruction.value for instruction in dfp.structure if instruction.instruction == 'FROM'])
+        images.extend([instruction['value'] for instruction in dfp.structure if instruction['instruction'] == 'FROM'])
     return images
 
 def parse_docker_compose_images(docker_compose_files):
