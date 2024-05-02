@@ -28,12 +28,9 @@ def write_to_file(data, filename):
         json.dump(data, file)
 
 if __name__ == "__main__":
-    # owner = os.getenv('OWNER')
-    # repo = os.getenv('REPO')
-    # token = os.getenv('GITHUB_TOKEN')
-    owner = "max3kkk"
-    repo = "moonlight-android"
-    token = "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"
+    owner = os.getenv('OWNER')
+    repo = os.getenv('REPO')
+    token = os.getenv('GITHUB_TOKEN')
     filename = "data/project_languages.json"
 
     data = get_repo_languages(owner, repo, token)
