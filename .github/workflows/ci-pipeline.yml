@@ -23,7 +23,7 @@ jobs:
         path: 'scripts-repo'
     
     - name: Create necessary directories
-      run: mkdir -p scripts-repo/data
+      run: mkdir -p data
 
     - name: Install dependencies
       run: pip install requests beautifulsoup4 pyyaml tqdm dockerfile-parse
