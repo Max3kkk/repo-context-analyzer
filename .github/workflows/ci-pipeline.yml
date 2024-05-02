@@ -1,9 +1,13 @@
 name: CI Pipeline
 
 on:
-  pull_request:
+  workflow_call:
+    inputs:
+      github_token:
+        required: true
+        type: string
     branches:
-      - main
+      default: main
 
 jobs:
   build-and-run-scripts:
@@ -17,20 +21,17 @@ jobs:
         python-version: '3.11'
     
     - name: Create necessary directories
-      run: |
-        mkdir -p data
+      run: mkdir -p data
 
     - name: Install dependencies
-      run: |
-        pip install requests beautifulsoup4 pyyaml tqdm dockerfile-parse
+      run: pip install requests beautifulsoup4 pyyaml tqdm dockerfile-parse
     
     - name: Install Syft
-      run: |
-        curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
+      run: curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
 
     - name: Run scripts
       env:
-        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ inputs.github_token }}
         OWNER: ${{ github.repository_owner }}
         REPO: ${{ github.event.repository.name }}
       run: |
@@ -48,34 +49,22 @@ jobs:
         name: used-stigs
         path: data/used_stigs.json
 
-  create-pr-message:
-    needs: build-and-run-scripts
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: used-stigs
-          path: data
-
-      - name: Comment on Pull Request
-        uses: actions/github-script@v5
-        with:
-          github-token: ${{ secrets.MY_GITHUB_TOKEN }}
-          script: |
-            const fs = require('fs');
-            const path = 'data/used_stigs.json';
-            const data = fs.readFileSync(path, 'utf8');
-            const pull_number = context.issue.number;  // This correctly gets the PR number
-            if (pull_number) {
-              github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: pull_number,
-                body: `### Updated STIG Information\n\`\`\`json\n${data}\n\`\`\``
-              });
-            } else {
-              console.log('No pull request number found.');
-            }
+    - name: Comment on Pull Request
+      uses: actions/github-script@v5
+      with:
+        github-token: ${{ inputs.github_token }}
+        script: |
+          const fs = require('fs');
+          const path = 'data/used_stigs.json';
+          const data = fs.readFileSync(path, 'utf8');
+          const pull_number = context.issue.number;
+          if (pull_number) {
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pull_number,
+              body: `### Updated STIG Information\n\`\`\`json\n${data}\n\`\`\``
+            });
+          } else {
+            console.log('No pull request number found.');
+          }
