@@ -1,0 +1,2165 @@
+{
+    "technology_groups": [
+        {
+            "usage_names": [
+                "Windows"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "OS",
+                        "Operating System"
+                    ],
+                    "versions": [
+                        {
+                            "number": "11",
+                            "full_name": "Windows 11"
+                        },
+                        {
+                            "number": "7",
+                            "full_name": "Windows 7"
+                        },
+                        {
+                            "number": "10",
+                            "full_name": "Windows 10"
+                        },
+                        {
+                            "number": "8",
+                            "full_name": "Windows 8"
+                        },
+                        {
+                            "number": "8.1",
+                            "full_name": "Windows 8 / 8.1 "
+                        },
+                        {
+                            "number": "Vista",
+                            "full_name": "Windows Vista"
+                        },
+                        {
+                            "number": "XP",
+                            "full_name": "Windows XP"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Server"
+                    ],
+                    "versions": [
+                        {
+                            "number": "2022",
+                            "full_name": "Windows Server 2022"
+                        },
+                        {
+                            "number": "2008",
+                            "full_name": "Windows Server 2008"
+                        },
+                        {
+                            "number": "2012",
+                            "full_name": "Windows Server 2012"
+                        },
+                        {
+                            "number": "2016",
+                            "full_name": "Windows Server 2016"
+                        },
+                        {
+                            "number": "2019",
+                            "full_name": "Windows Server 2019"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Defender",
+                        "Antivirus"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "Microsoft Windows Defender Antivirus"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Firewall"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "Microsoft Windows Firewall with Advanced Security"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "PAW"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "Windows PAW"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "MS",
+                "Exchange"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Exchange"
+                    ],
+                    "versions": [
+                        {
+                            "number": "2003",
+                            "full_name": "MS Exchange 2003"
+                        },
+                        {
+                            "number": "2010",
+                            "full_name": "MS Exchange 2010"
+                        },
+                        {
+                            "number": "2013",
+                            "full_name": "MS Exchange 2013"
+                        },
+                        {
+                            "number": "2016",
+                            "full_name": "MS Exchange 2016"
+                        },
+                        {
+                            "number": "2019",
+                            "full_name": "MS Exchange 2019"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "IIS"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Server",
+                        "Site"
+                    ],
+                    "versions": [
+                        {
+                            "number": "7.0",
+                            "full_name": "IIS 7.0 Server"
+                        },
+                        {
+                            "number": "7.0",
+                            "full_name": "IIS 7.0 Site"
+                        },
+                        {
+                            "number": "7.5",
+                            "full_name": "IIS 7.5 Server"
+                        },
+                        {
+                            "number": "7.5",
+                            "full_name": "IIS 7.5 Site"
+                        },
+                        {
+                            "number": "6",
+                            "full_name": "IIS6 Server"
+                        },
+                        {
+                            "number": "6",
+                            "full_name": "IIS6 Site"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Edge"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Browser"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "Microsoft Edge"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Apache"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Server"
+                    ],
+                    "versions": [
+                        {
+                            "number": "2.0",
+                            "full_name": "Apache SERVER 2.0 for Windows"
+                        },
+                        {
+                            "number": "2.2",
+                            "full_name": "Apache SERVER 2.2 for Windows"
+                        },
+                        {
+                            "number": "2.0",
+                            "full_name": "Apache Server 2.0 for Unix"
+                        },
+                        {
+                            "number": "2.2",
+                            "full_name": "Apache 2.2 Server for Unix"
+                        },
+                        {
+                            "number": "2.2",
+                            "full_name": "Apache 2.2 Server for Windows"
+                        },
+                        {
+                            "number": "2.4",
+                            "full_name": "Apache Server 2.4 UNIX Server"
+                        },
+                        {
+                            "number": "2.4",
+                            "full_name": "Apache Server 2.4 UNIX Site"
+                        },
+                        {
+                            "number": "2.4",
+                            "full_name": "Apache Server 2.4 Windows Server"
+                        },
+                        {
+                            "number": "9",
+                            "full_name": "Apache Tomcat Application Server 9"
+                        },
+                        {
+                            "number": "9",
+                            "full_name": "Apache Tomcat Application Sever 9"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Site"
+                    ],
+                    "versions": [
+                        {
+                            "number": "2.0",
+                            "full_name": "Apache Site 2.0 for Windows"
+                        },
+                        {
+                            "number": "2.2",
+                            "full_name": "Apache Site 2.2 for Unix"
+                        },
+                        {
+                            "number": "2.2",
+                            "full_name": "Apache Site 2.2 for Windows"
+                        },
+                        {
+                            "number": "2.0",
+                            "full_name": "Apache Site 2.0 for Unix"
+                        },
+                        {
+                            "number": "2.2",
+                            "full_name": "Apache 2.2 Site for Windows"
+                        },
+                        {
+                            "number": "2.2",
+                            "full_name": "Apache 2.2 Site for Unix"
+                        },
+                        {
+                            "number": "2.4",
+                            "full_name": "Apache Server 2.4 Windows Site"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Cassandra"
+                    ],
+                    "versions": [
+                        {
+                            "number": "3.11",
+                            "full_name": "Apache Cassandra 3.11"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Chrome"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Browser"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "Google Chrome Browser"
+                        },
+                        {
+                            "number": "Current",
+                            "full_name": "Google Chrome Current Windows"
+                        },
+                        {
+                            "number": "v23",
+                            "full_name": "Google Chrome v23 Windows"
+                        },
+                        {
+                            "number": "v24",
+                            "full_name": "Google Chrome v24 Windows Benchmark"
+                        },
+                        {
+                            "number": "v24",
+                            "full_name": "Google Chrome v24 Windows"
+                        },
+                        {
+                            "number": "Draft",
+                            "full_name": "Google Chrome Draft"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Android"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Google"
+                    ],
+                    "versions": [
+                        {
+                            "number": "9.x",
+                            "full_name": "Google Android 9.x"
+                        },
+                        {
+                            "number": "10.x",
+                            "full_name": "Google Android 10.x"
+                        },
+                        {
+                            "number": "11",
+                            "full_name": "Google Android 11"
+                        },
+                        {
+                            "number": "12",
+                            "full_name": "Google Android 12"
+                        },
+                        {
+                            "number": "13",
+                            "full_name": "Google Android 13"
+                        },
+                        {
+                            "number": "14",
+                            "full_name": "Google Android 14"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Samsung"
+                    ],
+                    "versions": [
+                        {
+                            "number": "10",
+                            "full_name": "Samsung Android OS 10 with Knox 3.x"
+                        },
+                        {
+                            "number": "11",
+                            "full_name": "Samsung Android 11 with Knox 3.x AE"
+                        },
+                        {
+                            "number": "12",
+                            "full_name": "Samsung Android 12 with Knox 3.x COBO"
+                        },
+                        {
+                            "number": "13",
+                            "full_name": "Samsung Android OS 13 with Knox 3.x COBO"
+                        },
+                        {
+                            "number": "14",
+                            "full_name": "Samsung Android OS 14 with Knox 3.x COBO"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "LG"
+                    ],
+                    "versions": [
+                        {
+                            "number": "6.x",
+                            "full_name": "LG Android 6.x"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Motorola"
+                    ],
+                    "versions": [
+                        {
+                            "number": "9.x",
+                            "full_name": "Motorola Android 9.x COBO"
+                        },
+                        {
+                            "number": "9.x",
+                            "full_name": "Motorola Android 9.x COPE"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Honeywell"
+                    ],
+                    "versions": [
+                        {
+                            "number": "9.x",
+                            "full_name": "Honeywell Android 9.x COBO"
+                        },
+                        {
+                            "number": "9.x",
+                            "full_name": "Honeywell Android 9.x COPE"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Zebra"
+                    ],
+                    "versions": [
+                        {
+                            "number": "10",
+                            "full_name": "Zebra Android 10 COBO"
+                        },
+                        {
+                            "number": "10",
+                            "full_name": "Zebra Android 10 COPE"
+                        },
+                        {
+                            "number": "11",
+                            "full_name": "Zebra Android 11 COBO"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Dell"
+                    ],
+                    "versions": [
+                        {
+                            "number": "2.2",
+                            "full_name": "Android 2.2 (Dell)"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "iOS",
+                "iPadOS"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "iOS",
+                        "iPadOS"
+                    ],
+                    "versions": [
+                        {
+                            "number": "10",
+                            "full_name": "Apple iOS 10"
+                        },
+                        {
+                            "number": "11",
+                            "full_name": "Apple iOS 11"
+                        },
+                        {
+                            "number": "12",
+                            "full_name": "Apple iOS 12"
+                        },
+                        {
+                            "number": "13",
+                            "full_name": "Apple iOS/iPadOS 13"
+                        },
+                        {
+                            "number": "14",
+                            "full_name": "Apple iOS/iPadOS 14"
+                        },
+                        {
+                            "number": "15",
+                            "full_name": "Apple iOS/iPadOS 15"
+                        },
+                        {
+                            "number": "16",
+                            "full_name": "Apple iOS-iPadOS 16"
+                        },
+                        {
+                            "number": "6",
+                            "full_name": "Apple iOS 6"
+                        },
+                        {
+                            "number": "7",
+                            "full_name": "Apple iOS 7"
+                        },
+                        {
+                            "number": "16",
+                            "full_name": "Apple iOS/iPad OS 16 MDFPP 3.3 BYOAD"
+                        },
+                        {
+                            "number": "16",
+                            "full_name": "Apple iOS/iPadOS 16 BYOAD"
+                        },
+                        {
+                            "number": "16",
+                            "full_name": "Apple iOS/iPadOS 16"
+                        },
+                        {
+                            "number": "17",
+                            "full_name": "Apple iOS/iPadOS 17"
+                        },
+                        {
+                            "number": "5",
+                            "full_name": "Apple iOS5"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Apple OS X"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Workstation"
+                    ],
+                    "versions": [
+                        {
+                            "number": "10.10",
+                            "full_name": "Apple OS X 10.10 (Yosemite) Workstation"
+                        },
+                        {
+                            "number": "10.11",
+                            "full_name": "Apple OS X 10.11"
+                        },
+                        {
+                            "number": "10.12",
+                            "full_name": "Apple OS X 10.12"
+                        },
+                        {
+                            "number": "10.13",
+                            "full_name": "Apple OS X 10.13"
+                        },
+                        {
+                            "number": "10.14",
+                            "full_name": "Apple OS X 10.14 (Mojave)"
+                        },
+                        {
+                            "number": "10.15",
+                            "full_name": "Apple OS X 10.15 (Catalina)"
+                        },
+                        {
+                            "number": "10.8",
+                            "full_name": "Apple OS X 10.8 (Mountain Lion) Workstation"
+                        },
+                        {
+                            "number": "10.9",
+                            "full_name": "Apple OS X 10.9 (Mavericks) Workstation"
+                        },
+                        {
+                            "number": "11",
+                            "full_name": "Apple macOS 11 (Big Sur)"
+                        },
+                        {
+                            "number": "12",
+                            "full_name": "Apple macOS 12 (Monterey)"
+                        },
+                        {
+                            "number": "13",
+                            "full_name": "Apple macOS 13 (Ventura)"
+                        },
+                        {
+                            "number": "14",
+                            "full_name": "Apple macOS 14 (Sonoma)"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Cisco"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "ASA"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "Cisco ASA Firewall"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "Cisco ASA IPS"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "Cisco ASA NDM"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "Cisco ASA VPN"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "IOS XE"
+                    ],
+                    "versions": [
+                        {
+                            "number": "3",
+                            "full_name": "Cisco IOS XE Release 3 NDM"
+                        },
+                        {
+                            "number": "3",
+                            "full_name": "Cisco IOS XE Release 3 RTR"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "ISE"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "Cisco ISE NAC"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "Cisco ISE NDM"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "MySQL"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Database"
+                    ],
+                    "versions": [
+                        {
+                            "number": "8.0",
+                            "full_name": "Oracle MySQL 8.0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Oracle"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Database"
+                    ],
+                    "versions": [
+                        {
+                            "number": "10",
+                            "full_name": "Oracle Database 10g"
+                        },
+                        {
+                            "number": "11.2",
+                            "full_name": "Oracle Database 11.2g"
+                        },
+                        {
+                            "number": "11",
+                            "full_name": "Oracle Database 11g Installation"
+                        },
+                        {
+                            "number": "12c",
+                            "full_name": "Oracle Database 12c"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Linux"
+                    ],
+                    "versions": [
+                        {
+                            "number": "5",
+                            "full_name": "Oracle Linux 5"
+                        },
+                        {
+                            "number": "6",
+                            "full_name": "Oracle Linux 6"
+                        },
+                        {
+                            "number": "7",
+                            "full_name": "Oracle Linux 7"
+                        },
+                        {
+                            "number": "8",
+                            "full_name": "Oracle Linux 8"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Web Server"
+                    ],
+                    "versions": [
+                        {
+                            "number": "12.1.3",
+                            "full_name": "Oracle HTTP Server 12.1.3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "IBM"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "WebSphere",
+                        "Application Server"
+                    ],
+                    "versions": [
+                        {
+                            "number": "Liberty",
+                            "full_name": "IBM WebSphere Liberty Server"
+                        },
+                        {
+                            "number": "Traditional",
+                            "full_name": "IBM WebSphere Traditional V9.x"
+                        },
+                        {
+                            "number": "MQ",
+                            "full_name": "IBM WebsphereMQ"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "z/OS"
+                    ],
+                    "versions": [
+                        {
+                            "number": "ACF2",
+                            "full_name": "IBM z/OS ACF2"
+                        },
+                        {
+                            "number": "RACF",
+                            "full_name": "IBM z/OS RACF"
+                        },
+                        {
+                            "number": "TSS",
+                            "full_name": "IBM z/OS TSS"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Java"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Runtime Environment (JRE)"
+                    ],
+                    "versions": [
+                        {
+                            "number": "8",
+                            "full_name": "Java Runtime Environment (JRE) version 8 for Unix"
+                        },
+                        {
+                            "number": "6",
+                            "full_name": "Java Runtime Environment (JRE) 6 for UNIX"
+                        },
+                        {
+                            "number": "6",
+                            "full_name": "Java Runtime Environment (JRE) 6 for Win7"
+                        },
+                        {
+                            "number": "6",
+                            "full_name": "Java Runtime Environment (JRE) 6 for WinXP"
+                        },
+                        {
+                            "number": "6",
+                            "full_name": "Java Runtime Environment (JRE) 6 for Windows XP"
+                        },
+                        {
+                            "number": "7",
+                            "full_name": "Java Runtime Environment (JRE) 7 for UNIX"
+                        },
+                        {
+                            "number": "7",
+                            "full_name": "Java Runtime Environment (JRE) 7 for Win7"
+                        },
+                        {
+                            "number": "7",
+                            "full_name": "Java Runtime Environment (JRE) 7 for WinXP"
+                        },
+                        {
+                            "number": "8",
+                            "full_name": "Java Runtime Environment (JRE) version 8 for Windows"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Red Hat"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Enterprise Linux"
+                    ],
+                    "versions": [
+                        {
+                            "number": "9",
+                            "full_name": "Red Hat Enterprise Linux 9"
+                        },
+                        {
+                            "number": "5",
+                            "full_name": "Red Hat Enterprise Linux 5"
+                        },
+                        {
+                            "number": "6",
+                            "full_name": "Red Hat Enterprise Linux 6"
+                        },
+                        {
+                            "number": "7",
+                            "full_name": "Red Hat Enterprise Linux 7"
+                        },
+                        {
+                            "number": "8",
+                            "full_name": "Red Hat Enterprise Linux 8"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "OpenShift",
+                        "Container Platform"
+                    ],
+                    "versions": [
+                        {
+                            "number": "4.12",
+                            "full_name": "Red Hat OpenShift Container Platform 4.12"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "VMware"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Hypervisor"
+                    ],
+                    "versions": [
+                        {
+                            "number": "ESXi 5.x",
+                            "full_name": "VMware ESXi 5.x"
+                        },
+                        {
+                            "number": "ESXi 6.x",
+                            "full_name": "VMware ESXi 6.x"
+                        },
+                        {
+                            "number": "ESXi 7.x",
+                            "full_name": "VMware ESXi 7.x"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "vSphere",
+                        "Management Software"
+                    ],
+                    "versions": [
+                        {
+                            "number": "5.x",
+                            "full_name": "VMware vSphere 5.x"
+                        },
+                        {
+                            "number": "6.x",
+                            "full_name": "VMware vSphere 6.x"
+                        },
+                        {
+                            "number": "7.x",
+                            "full_name": "VMware vSphere 7.x"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "vCenter Server"
+                    ],
+                    "versions": [
+                        {
+                            "number": "5.x",
+                            "full_name": "VMware vCenter Server 5.x"
+                        },
+                        {
+                            "number": "6.x",
+                            "full_name": "VMware vCenter Server 6.x"
+                        },
+                        {
+                            "number": "7.x",
+                            "full_name": "VMware vCenter Server 7.x"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Ubuntu"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "OS"
+                    ],
+                    "versions": [
+                        {
+                            "number": "20.04",
+                            "full_name": "Ubuntu Desktop 20.04 LTS"
+                        },
+                        {
+                            "number": "21.04",
+                            "full_name": "Ubuntu Desktop 21.04"
+                        },
+                        {
+                            "number": "16.04 LTS",
+                            "full_name": "Canonical Ubuntu 16.04 LTS"
+                        },
+                        {
+                            "number": "18.04 LTS",
+                            "full_name": "Canonical Ubuntu 18.04 LTS"
+                        },
+                        {
+                            "number": "20.04 LTS",
+                            "full_name": "Canonical Ubuntu 20.04 LTS"
+                        },
+                        {
+                            "number": "16.04",
+                            "full_name": "Canonical Ubuntu 16.04"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Server"
+                    ],
+                    "versions": [
+                        {
+                            "number": "20.04",
+                            "full_name": "Ubuntu Server 20.04 LTS"
+                        },
+                        {
+                            "number": "22.04",
+                            "full_name": "Ubuntu Server 22.04 LTS"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Docker"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Engine"
+                    ],
+                    "versions": [
+                        {
+                            "number": "19.03",
+                            "full_name": "Docker Engine 19.03"
+                        },
+                        {
+                            "number": "20.10",
+                            "full_name": "Docker Engine 20.10"
+                        },
+                        {
+                            "number": "21.03",
+                            "full_name": "Docker Engine 21.03"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Compose"
+                    ],
+                    "versions": [
+                        {
+                            "number": "1.27",
+                            "full_name": "Docker Compose 1.27"
+                        },
+                        {
+                            "number": "1.28",
+                            "full_name": "Docker Compose 1.28"
+                        },
+                        {
+                            "number": "1.29",
+                            "full_name": "Docker Compose 1.29"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Enterprise"
+                    ],
+                    "versions": [
+                        {
+                            "number": "2.x",
+                            "full_name": "Docker Enterprise 2.x Linux/UNIX "
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Kubernetes"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Container Orchestration"
+                    ],
+                    "versions": [
+                        {
+                            "number": "1.19",
+                            "full_name": "Kubernetes 1.19"
+                        },
+                        {
+                            "number": "1.20",
+                            "full_name": "Kubernetes 1.20"
+                        },
+                        {
+                            "number": "1.21",
+                            "full_name": "Kubernetes 1.21"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "NGINX"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Web Server"
+                    ],
+                    "versions": [
+                        {
+                            "number": "1.18",
+                            "full_name": "NGINX 1.18"
+                        },
+                        {
+                            "number": "1.19",
+                            "full_name": "NGINX 1.19"
+                        },
+                        {
+                            "number": "1.20",
+                            "full_name": "NGINX 1.20"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Load Balancer"
+                    ],
+                    "versions": [
+                        {
+                            "number": "1.18",
+                            "full_name": "NGINX Plus 1.18"
+                        },
+                        {
+                            "number": "1.19",
+                            "full_name": "NGINX Plus 1.19"
+                        },
+                        {
+                            "number": "1.20",
+                            "full_name": "NGINX Plus 1.20"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Fortinet"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Firewall"
+                    ],
+                    "versions": [
+                        {
+                            "number": "6.x",
+                            "full_name": "Fortinet FortiGate Firewall 6.x"
+                        },
+                        {
+                            "number": "7.x",
+                            "full_name": "Fortinet FortiGate Firewall 7.x"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Intrusion Detection and Prevention System",
+                        "IDPS"
+                    ],
+                    "versions": [
+                        {
+                            "number": "9.x",
+                            "full_name": "Fortinet FortiGate IDPS 9.x"
+                        },
+                        {
+                            "number": "10.x",
+                            "full_name": "Fortinet FortiGate IDPS 10.x"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Network Device Management",
+                        "NDM"
+                    ],
+                    "versions": [
+                        {
+                            "number": "6.x",
+                            "full_name": "Fortinet FortiGate NDM 6.x"
+                        },
+                        {
+                            "number": "7.x",
+                            "full_name": "Fortinet FortiGate NDM 7.x"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Trend Micro"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Deep Security"
+                    ],
+                    "versions": [
+                        {
+                            "number": "9.x",
+                            "full_name": "Trend Micro Deep Security 9.x"
+                        },
+                        {
+                            "number": "10.x",
+                            "full_name": "Trend Micro Deep Security 10.x"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "TippingPoint"
+                    ],
+                    "versions": [
+                        {
+                            "number": "IPS",
+                            "full_name": "Trend Micro TippingPoint IPS"
+                        },
+                        {
+                            "number": "NDM",
+                            "full_name": "Trend Micro TippingPoint NDM"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Riverbed"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Network Performance Monitoring"
+                    ],
+                    "versions": [
+                        {
+                            "number": "7.x",
+                            "full_name": "Riverbed NetProfiler 7.x"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Cisco"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Adaptive Security Appliance",
+                        "ASA"
+                    ],
+                    "versions": [
+                        {
+                            "number": "Firewall",
+                            "full_name": "Cisco ASA Firewall"
+                        },
+                        {
+                            "number": "IPS",
+                            "full_name": "Cisco ASA IPS"
+                        },
+                        {
+                            "number": "VPN",
+                            "full_name": "Cisco ASA VPN"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Identity Services Engine",
+                        "ISE"
+                    ],
+                    "versions": [
+                        {
+                            "number": "NAC",
+                            "full_name": "Cisco ISE NAC"
+                        },
+                        {
+                            "number": "NDM",
+                            "full_name": "Cisco ISE NDM"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Internetwork Operating System",
+                        "IOS"
+                    ],
+                    "versions": [
+                        {
+                            "number": "XE Release 3",
+                            "full_name": "Cisco IOS XE Release 3"
+                        },
+                        {
+                            "number": "XE Release 4",
+                            "full_name": "Cisco IOS XE Release 4"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "PostgreSQL",
+                "postgres"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Database"
+                    ],
+                    "versions": [
+                        {
+                            "number": "9.x",
+                            "full_name": "PostgreSQL 9.x"
+                        },
+                        {
+                            "number": "10.x",
+                            "full_name": "PostgreSQL 10.x"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Crunchy Data",
+                        "crunchy"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "Crunchy Data PostgreSQL"
+                        },
+                        {
+                            "number": "9.x",
+                            "full_name": "Crunchy Data PostgreSQL 9.x"
+                        },
+                        {
+                            "number": "10.x",
+                            "full_name": "Crunchy Data PostgreSQL 10.x"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "EnterpriseDB",
+                        "edb"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "EDB Postgres Advanced Server"
+                        },
+                        {
+                            "number": "EPAS",
+                            "full_name": "EnterpriseDB Postgres Advanced Server (EPAS)"
+                        },
+                        {
+                            "number": "11",
+                            "full_name": "EnterpriseDB Postgres Advanced Server v11 on Windows"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Oracle"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Database"
+                    ],
+                    "versions": [
+                        {
+                            "number": "10g",
+                            "full_name": "Oracle Database 10g"
+                        },
+                        {
+                            "number": "11g",
+                            "full_name": "Oracle Database 11g"
+                        },
+                        {
+                            "number": "12c",
+                            "full_name": "Oracle Database 12c"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Web Server"
+                    ],
+                    "versions": [
+                        {
+                            "number": "12.1.3",
+                            "full_name": "Oracle HTTP Server 12.1.3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "IBM"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Security"
+                    ],
+                    "versions": [
+                        {
+                            "number": "ACF2",
+                            "full_name": "IBM z/OS ACF2"
+                        },
+                        {
+                            "number": "RACF",
+                            "full_name": "IBM z/OS RACF"
+                        },
+                        {
+                            "number": "TSS",
+                            "full_name": "IBM z/OS TSS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Middleware"
+                    ],
+                    "versions": [
+                        {
+                            "number": "Liberty",
+                            "full_name": "IBM WebSphere Liberty Server"
+                        },
+                        {
+                            "number": "Traditional",
+                            "full_name": "IBM WebSphere Traditional V9.x"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Symantec"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "AntiVirus"
+                    ],
+                    "versions": [
+                        {
+                            "number": "12.1",
+                            "full_name": "Symantec Endpoint Protection 12.1"
+                        },
+                        {
+                            "number": "12.1",
+                            "full_name": "Symantec Endpoint Protection 12.1 Local Client Antivirus"
+                        },
+                        {
+                            "number": "12.1",
+                            "full_name": "Symantec Endpoint Protection 12.1 Managed Client Antivirus"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Solaris"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "SPARC"
+                    ],
+                    "versions": [
+                        {
+                            "number": "10",
+                            "full_name": "Solaris 10 SPARC"
+                        },
+                        {
+                            "number": "11",
+                            "full_name": "Solaris 11 SPARC"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "X86"
+                    ],
+                    "versions": [
+                        {
+                            "number": "10",
+                            "full_name": "Solaris 10 X86"
+                        },
+                        {
+                            "number": "11",
+                            "full_name": "Solaris 11 X86"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Tanium"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Endpoint Management"
+                    ],
+                    "versions": [
+                        {
+                            "number": "6.5",
+                            "full_name": "Tanium 6.5"
+                        },
+                        {
+                            "number": "7.0",
+                            "full_name": "Tanium 7.0"
+                        },
+                        {
+                            "number": "7.3",
+                            "full_name": "Tanium 7.3"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Application"
+                    ],
+                    "versions": [
+                        {
+                            "number": "7.x",
+                            "full_name": "Tanium 7.x Application on TanOS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Operating System",
+                        "OS"
+                    ],
+                    "versions": [
+                        {
+                            "number": "7.x",
+                            "full_name": "Tanium 7.x Operating System on TanOS"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "z/OS"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "CSSMTP"
+                    ],
+                    "versions": [
+                        {
+                            "number": "ACF2",
+                            "full_name": "z/OS CSSMTP for ACF2"
+                        },
+                        {
+                            "number": "RACF",
+                            "full_name": "z/OS CSSMTP for RACF"
+                        },
+                        {
+                            "number": "TSS",
+                            "full_name": "z/OS CSSMTP for TSS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "BMC"
+                    ],
+                    "versions": [
+                        {
+                            "number": "MAINVIEW",
+                            "full_name": "z/OS BMC MAINVIEW for z/OS for ACF2"
+                        },
+                        {
+                            "number": "MAINVIEW",
+                            "full_name": "z/OS BMC MAINVIEW for z/OS for RACF"
+                        },
+                        {
+                            "number": "MAINVIEW",
+                            "full_name": "z/OS BMC MAINVIEW for z/OS for TSS"
+                        },
+                        {
+                            "number": "IOA",
+                            "full_name": "z/OS BMC IOA for ACF2"
+                        },
+                        {
+                            "number": "IOA",
+                            "full_name": "z/OS BMC IOA for RACF"
+                        },
+                        {
+                            "number": "IOA",
+                            "full_name": "z/OS BMC IOA for TSS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "CA"
+                    ],
+                    "versions": [
+                        {
+                            "number": "1 Tape Management",
+                            "full_name": "z/OS CA 1 Tape Management for ACF2"
+                        },
+                        {
+                            "number": "1 Tape Management",
+                            "full_name": "z/OS CA 1 Tape Management for RACF"
+                        },
+                        {
+                            "number": "1 Tape Management",
+                            "full_name": "z/OS CA 1 Tape Management for TSS"
+                        },
+                        {
+                            "number": "Common Services",
+                            "full_name": "z/OS CA Common Services for ACF2"
+                        },
+                        {
+                            "number": "Common Services",
+                            "full_name": "z/OS CA Common Services for RACF"
+                        },
+                        {
+                            "number": "Common Services",
+                            "full_name": "z/OS CA Common Services for TSS"
+                        },
+                        {
+                            "number": "MICS",
+                            "full_name": "z/OS CA MICS for ACF2"
+                        },
+                        {
+                            "number": "MICS",
+                            "full_name": "z/OS CA MICS for RACF"
+                        },
+                        {
+                            "number": "MICS",
+                            "full_name": "z/OS CA MICS for TSS"
+                        },
+                        {
+                            "number": "MIM",
+                            "full_name": "z/OS CA MIM for ACF2"
+                        },
+                        {
+                            "number": "MIM",
+                            "full_name": "z/OS CA MIM for RACF"
+                        },
+                        {
+                            "number": "MIM",
+                            "full_name": "z/OS CA MIM for TSS"
+                        },
+                        {
+                            "number": "VTAPE",
+                            "full_name": "z/OS CA VTAPE for ACF2"
+                        },
+                        {
+                            "number": "VTAPE",
+                            "full_name": "z/OS CA VTAPE for RACF"
+                        },
+                        {
+                            "number": "VTAPE",
+                            "full_name": "z/OS CA VTAPE for TSS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "CL/SuperSession"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "z/OS CL/SuperSession for ACF2"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "z/OS CL/SuperSession for RACF"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "z/OS CL/SuperSession for TSS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "IBM"
+                    ],
+                    "versions": [
+                        {
+                            "number": "CICS Transaction Server",
+                            "full_name": "z/OS IBM CICS Transaction Server for ACF2"
+                        },
+                        {
+                            "number": "CICS Transaction Server",
+                            "full_name": "z/OS IBM CICS Transaction Server for RACF"
+                        },
+                        {
+                            "number": "CICS Transaction Server",
+                            "full_name": "z/OS IBM CICS Transaction Server for TSS"
+                        },
+                        {
+                            "number": "System Display and Search Facility (SDSF)",
+                            "full_name": "z/OS IBM System Display and Search Facility (SDSF) for ACF2"
+                        },
+                        {
+                            "number": "System Display and Search Facility (SDSF)",
+                            "full_name": "z/OS IBM System Display and Search Facility (SDSF) for RACF"
+                        },
+                        {
+                            "number": "System Display and Search Facility (SDSF)",
+                            "full_name": "z/OS IBM System Display and Search Facility (SDSF) for TSS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "ICSF"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "z/OS ICSF for ACF2"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "z/OS ICSF for RACF"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "z/OS ICSF for TSS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "NetView"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "z/OS NetView for ACF2"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "z/OS NetView for RACF"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "z/OS NetView for TSS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Quest"
+                    ],
+                    "versions": [
+                        {
+                            "number": "NC-Pass",
+                            "full_name": "z/OS Quest NC-Pass for ACF2"
+                        },
+                        {
+                            "number": "NC-Pass",
+                            "full_name": "z/OS Quest NC-Pass for RACF"
+                        },
+                        {
+                            "number": "NC-Pass",
+                            "full_name": "z/OS Quest NC-Pass for TSS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "ROSCOE"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "z/OS ROSCOE for ACF2"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "z/OS ROSCOE for RACF"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "z/OS ROSCOE for TSS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "TADz"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "z/OS TADz for ACF2"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "z/OS TADz for RACF"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "z/OS TADz for TSS"
+                        }
+                    ]
+                },
+                {
+                    "usage_names": [
+                        "Citrix"
+                    ],
+                    "technologies": [
+                        {
+                            "type_names": [
+                                "Virtual Apps and Desktop"
+                            ],
+                            "versions": [
+                                {
+                                    "number": "7.x",
+                                    "full_name": "Citrix Virtual Apps and Desktop 7.x License Server"
+                                },
+                                {
+                                    "number": "7.x",
+                                    "full_name": "Citrix Virtual Apps and Desktop 7.x Linux Virtual Delivery Agent"
+                                },
+                                {
+                                    "number": "7.x",
+                                    "full_name": "Citrix Virtual Apps and Desktop 7.x StoreFront"
+                                },
+                                {
+                                    "number": "7.x",
+                                    "full_name": "Citrix Virtual Apps and Desktop 7.x Windows Virtual Delivery Agent"
+                                },
+                                {
+                                    "number": "7.x",
+                                    "full_name": "Citrix Virtual Apps and Desktop 7.x Workspace App"
+                                }
+                            ]
+                        },
+                        {
+                            "type_names": [
+                                "XenDesktop"
+                            ],
+                            "versions": [
+                                {
+                                    "number": "7.x",
+                                    "full_name": "Citrix XenDesktop 7.x License Server"
+                                },
+                                {
+                                    "number": "7.x",
+                                    "full_name": "Citrix XenDesktop 7.x Receiver"
+                                },
+                                {
+                                    "number": "7.x",
+                                    "full_name": "Citrix XenDesktop 7.x Windows Virtual Delivery Agent"
+                                },
+                                {
+                                    "number": "v7.x",
+                                    "full_name": "Citrix XenDesktop v7.x StoreFront"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "TDMF"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "z/OS TDMF for ACF2"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "z/OS TDMF for RACF"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "z/OS TDMF for TSS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "VSS"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "z/OS VSS for RACF"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "FEP"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "zOS FEP for ACF2"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "zOS FEP for RACF"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "zOS FEP for TSS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Websphere Application Server"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "zOS Websphere Application Server for ACF2"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "zOS Websphere Application Server for RACF"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "zOS Websphere Application Server for TSS"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "WebsphereMQ"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "zOS WebsphereMQ for ACF2"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "zOS WebsphereMQ for RACF"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "zOS WebsphereMQ for TSS"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "A10 Networks"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "ADC",
+                        "ALG"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "A10 Networks ADC ALG"
+                        },
+                        {
+                            "number": "",
+                            "full_name": "A10 Networks ADC NDM"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Redis"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Database"
+                    ],
+                    "versions": [
+                        {
+                            "number": "6.x",
+                            "full_name": "Redis Enterprise 6.x"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "MongoDB"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Enterprise"
+                    ],
+                    "versions": [
+                        {
+                            "number": "3.x",
+                            "full_name": "MongoDB Enterprise Advanced 3.x"
+                        },
+                        {
+                            "number": "4.x",
+                            "full_name": "MongoDB Enterprise Advanced 4.x"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "Adobe"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Acrobat"
+                    ],
+                    "versions": [
+                        {
+                            "number": "XI",
+                            "full_name": "Adobe Acrobat Pro XI"
+                        },
+                        {
+                            "number": "DC Classic",
+                            "full_name": "Adobe Acrobat Professional DC Classic"
+                        },
+                        {
+                            "number": "DC Continuous",
+                            "full_name": "Adobe Acrobat Professional DC Continuous"
+                        },
+                        {
+                            "number": "DC Continuous Track",
+                            "full_name": "Adobe Acrobat Professional DC Continuous Track"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "Acrobat Reader"
+                    ],
+                    "versions": [
+                        {
+                            "number": "DC Classic Track",
+                            "full_name": "Adobe Acrobat Reader DC Classic Track"
+                        },
+                        {
+                            "number": "DC Continuous Track",
+                            "full_name": "Adobe Acrobat Reader DC Continuous Track"
+                        }
+                    ]
+                },
+                {
+                    "type_names": [
+                        "ColdFusion"
+                    ],
+                    "versions": [
+                        {
+                            "number": "11",
+                            "full_name": "Adobe ColdFusion 11"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "BlackBerry"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "OS"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "BlackBerry 10 OS"
+                        },
+                        {
+                            "number": "10.2.x",
+                            "full_name": "BlackBerry 10.2.x OS"
+                        },
+                        {
+                            "number": "10.3.x",
+                            "full_name": "BlackBerry OS 10.3.x"
+                        },
+                        {
+                            "number": "5-7",
+                            "full_name": "BlackBerry OS (version 5-7)"
+                        },
+                        {
+                            "number": "7.x",
+                            "full_name": "BlackBerry OS 7.x"
+                        },
+                        {
+                            "number": "7.x.x",
+                            "full_name": "BlackBerry OS 7.x.x"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "MariaDB"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Database"
+                    ],
+                    "versions": [
+                        {
+                            "number": "10.x",
+                            "full_name": "MariaDB Enterprise 10.x"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "usage_names": [
+                "k8s",
+                "Kubernetes"
+            ],
+            "technologies": [
+                {
+                    "type_names": [
+                        "Container Orchestration"
+                    ],
+                    "versions": [
+                        {
+                            "number": "",
+                            "full_name": "Kubernetes"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
