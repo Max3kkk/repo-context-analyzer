@@ -68,10 +68,14 @@ jobs:
             const fs = require('fs');
             const path = 'data/used_stigs.json';
             const data = fs.readFileSync(path, 'utf8');
-            const issue_number = process.env.GITHUB_REF.split('/').pop();
-            github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issue_number,
-              body: `### Updated STIG Information\n\`\`\`json\n${data}\n\`\`\``
-            });
+            const pull_number = context.issue.number;  // This correctly gets the PR number
+            if (pull_number) {
+              github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pull_number,
+                body: `### Updated STIG Information\n\`\`\`json\n${data}\n\`\`\``
+              });
+            } else {
+              console.log('No pull request number found.');
+            }
