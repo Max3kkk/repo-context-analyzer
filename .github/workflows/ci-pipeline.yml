@@ -18,7 +18,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install requests beautifulsoup4 pyyaml json tqdm glob
+        pip install requests beautifulsoup4 pyyaml tqdm
 
     - name: Run scripts
       env:
