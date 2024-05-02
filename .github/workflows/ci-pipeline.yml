@@ -30,7 +30,7 @@ jobs:
 
     - name: Run scripts
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         OWNER: ${{ github.repository_owner }}
         REPO: ${{ github.event.repository.name }}
       run: |
@@ -52,26 +52,26 @@ jobs:
     needs: build-and-run-scripts
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/download-artifact@v2
-      with:
-        name: used-stigs
-        path: data
+      - uses: actions/checkout@v2
 
-    - name: Read json file
-      id: read-file
-      run: echo "::set-output name=content::$(cat data/used_stigs.json)"
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: used-stigs
+          path: data
 
-    - name: Create Pull Request Message
-      uses: peter-evans/create-pull-request@v3
-      with:
-        commit-message: "Update STIGs"
-        title: "Updated STIG Information"
-        body: |
-          ```json
-          ${{ steps.read-file.outputs.content }}
-          ```
-        branch: update-stigs-${{ github.head_ref }}
-        base: main
-        labels: update
-        token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Comment on Pull Request
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.MY_GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = 'data/used_stigs.json';
+            const data = fs.readFileSync(path, 'utf8');
+            const issue_number = process.env.GITHUB_REF.split('/').pop();
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              body: `### Updated STIG Information\n\`\`\`json\n${data}\n\`\`\``
+            });
