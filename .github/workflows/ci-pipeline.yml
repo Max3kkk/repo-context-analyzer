@@ -24,6 +24,9 @@ jobs:
     
     - name: Create necessary directories
       run: mkdir -p data
+  
+    - name: Move stig.json to current directory
+      run: mv scripts-repo/stig.json ./
 
     - name: Install dependencies
       run: pip install requests beautifulsoup4 pyyaml tqdm dockerfile-parse
