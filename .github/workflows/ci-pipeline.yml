@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: main
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -72,5 +74,6 @@ jobs:
           ${{ steps.read-file.outputs.content }}
           ```
         branch: update-stigs-${{ github.head_ref }}
+        base: main
         labels: update
         token: ${{ secrets.GITHUB_TOKEN }}
