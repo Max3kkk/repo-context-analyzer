@@ -10,15 +10,20 @@ jobs:
   build-and-run-scripts:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
+    - name: Checkout current repository
+      uses: actions/checkout@v2
       with:
-        python-version: '3.11'
+        path: '.'
+
+    - name: Checkout scripts repository
+      uses: actions/checkout@v2
+      with:
+        repository: Max3kkk/repo-context-analyzer
+        token: ${{ secrets.MY_GITHUB_TOKEN }}
+        path: 'scripts-repo'
     
     - name: Create necessary directories
-      run: mkdir -p data
+      run: mkdir -p ../data
 
     - name: Install dependencies
       run: pip install requests beautifulsoup4 pyyaml tqdm dockerfile-parse
@@ -32,13 +37,14 @@ jobs:
         OWNER: ${{ github.repository_owner }}
         REPO: ${{ github.event.repository.name }}
       run: |
-        python parse_images.py
-        python image_hierarchy.py
-        python image_info.py
-        python language_ident.py
-        python syft_check.py
-        python dependency_reader.py
-        python stig_parser.py
+        cd ..
+        python scripts-repo/parse_images.py
+        python scripts-repo/image_hierarchy.py
+        python scripts-repo/image_info.py
+        python scripts-repo/language_ident.py
+        python scripts-repo/syft_check.py
+        python scripts-repo/dependency_reader.py
+        python scripts-repo/stig_parser.py
 
     - name: Upload result file
       uses: actions/upload-artifact@v2
