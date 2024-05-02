@@ -2,10 +2,9 @@ name: CI Pipeline
 
 on:
   workflow_call:
-    inputs:
-      github_token:
+    secrets:
+      MY_GITHUB_TOKEN:
         required: true
-        type: string
 
 jobs:
   build-and-run-scripts:
