@@ -46,7 +46,7 @@ def fetch_description_maven(group_id, artifact_id):
     if response.status_code == 200:
         data = response.json()
         docs = data["response"]["docs"]
-        return docs[0]["p"] or "-"
+        return docs[0]["p"] if docs else "-"
 
 
 def fetch_description_nuget(package_name):
@@ -124,7 +124,10 @@ def get_package_description(artifact):
         description = fetch_description_rubygems(package_name)
     elif language == "java":
         # For Java, Maven Central requires group and artifact IDs
-        group_id, artifact_id = package_name.split(":")
+        if ":" in package_name:
+            group_id, artifact_id = package_name.split(":")
+        else:
+            group_id, artifact_id = artifact["purl"].split("/")[-2:]
         description = fetch_description_maven(group_id, artifact_id)
     elif language == ".net":
         description = fetch_description_nuget(package_name)
@@ -190,6 +193,7 @@ def process_project_languages():
     with open(language_file, "r") as file:
         data = json.load(file)
         for language, _ in data.items():
+            language = language.lower()
             with open("data/dependency_descriptions.json", "r") as file:
                 descriptions = json.load(file)
                 if language not in descriptions:
