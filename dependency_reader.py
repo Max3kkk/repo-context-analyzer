@@ -1,5 +1,6 @@
 import json
 import glob
+import os
 from collections import defaultdict
 import requests
 from tqdm import tqdm
@@ -27,7 +28,7 @@ def fetch_description_npm(package_name):
     if response.status_code == 200:
         data = response.json()
         latest_version = data["dist-tags"]["latest"]
-        return data["versions"][latest_version]["description"] or "-"
+        return data["versions"][latest_version].get("description", "-") if data["versions"][latest_version] else "-"
 
 
 def fetch_description_rubygems(gem_name):
@@ -36,7 +37,7 @@ def fetch_description_rubygems(gem_name):
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        return data["info"] or "-"
+        return data["info"] if data["info"] else "-"
 
 
 def fetch_description_maven(group_id, artifact_id):
@@ -60,7 +61,7 @@ def fetch_description_nuget(package_name):
         response_version = requests.get(url_version)
         if response_version.status_code == 200:
             data_version = response_version.json()
-            return data_version["items"][0]["catalogEntry"]["description"] or "-"
+            return data_version["items"][0]["catalogEntry"]["description"] if data_version["items"][0]["catalogEntry"]["description"] else "-"
 
 def fetch_description_go(package_name):
     """Fetches package description from the Go module proxy."""
@@ -78,7 +79,7 @@ def fetch_description_crates(package_name):
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        return data["crate"]["description"] or "-"
+        return data["crate"]["description"] if data["crate"]["description"] else "-"
 
 def fetch_description_packagist(package_name):
     """Fetches package description from Packagist (PHP packages)."""
@@ -87,7 +88,7 @@ def fetch_description_packagist(package_name):
     if response.status_code == 200:
         data = response.json()
         latest_version = list(data["packages"][package_name].keys())[0]
-        return data["packages"][package_name][latest_version]["description"] or "-"
+        return data["packages"][package_name][latest_version]["description"] if data["packages"][package_name][latest_version]["description"] else "-"
 
 
 
@@ -100,22 +101,25 @@ def fetch_description_debian(package_name):
         if description_div:
             # Extract the header within the description div to get the summary line.
             header = description_div.find('h2')
-            summary = header.text.strip() if header else 'No summary available.'
+            summary = header.text.strip() if header else None
             # Extract paragraphs in the description div for detailed description.
             paragraphs = description_div.find_all('p', recursive=False)
-            description = ' '.join([p.text for p in paragraphs])
-            return f"{summary}\n\n{description}"
+            if paragraphs:
+                description = ' '.join([p.text for p in paragraphs]) 
+            else:
+                description = None
+            return f"{summary}\n\n{description}" if summary or description else "-"
         else:
             return "-"
 
 
 def get_package_description(artifact):
     """Determines the language and fetches the description accordingly."""
-    language = artifact["language"]
-    if not language:
-        language = artifact["type"]
+    language = artifact.get("language") or artifact["type"]
     package_name = artifact["name"]
-    description = None
+    description = artifact.get("description")
+    if description:
+        return language, description, package_name
     if language == "python":
         description = fetch_description_pypi(package_name)
     elif language == "javascript":
@@ -181,7 +185,7 @@ def append_descriptions_to_file(package_descriptions):
 
 def process_docker_dependencies():
     files = glob.glob('data/docker_dependency_*.json')
-    docker_images = [file.split('_')[-1].split('.')[0] for file in files]
+    docker_images = [file[23:-5] for file in files]
 
     for docker_image in docker_images:
         syft_file = f"data/docker_dependency_{docker_image}.json"
@@ -206,7 +210,7 @@ def process_project_languages():
 def main():
     process_project_dependencies()
     process_docker_dependencies()
-    process_project_languages()
+    # process_project_languages()
 
 if __name__ == "__main__":
     main()

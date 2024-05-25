@@ -19,8 +19,7 @@ def get_repo_languages(owner, repo, token):
     total_lines = sum(data.values())
     data_percentage = {lang: (count / total_lines) * 100 for lang, count in data.items()}
 
-    # round to 2 decimal places
-    return {lang: round(percentage, 2) for lang, percentage in data_percentage.items() if percentage >= 30}
+    return {lang: round(percentage, 2) for lang, percentage in data_percentage.items() if percentage >= 15}
 
 
 def write_to_file(data, filename):
